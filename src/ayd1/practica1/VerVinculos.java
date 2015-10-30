@@ -51,11 +51,13 @@ public class VerVinculos extends javax.swing.JFrame {
             rs.close();
             stm.close();
             c.close();
+          
         }
         catch(Exception e)
         {
             JOptionPane.showMessageDialog(this, "Error Cargando Socios: " + e.getMessage());
             this.jcb_vinculos.removeAllItems();
+        
         }
         
     }

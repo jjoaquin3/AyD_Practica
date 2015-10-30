@@ -27,7 +27,9 @@ public class Registrar extends javax.swing.JFrame {
             Connection c = DriverManager.getConnection("jdbc:postgresql://10.56.22.175:8080/Analisis","postgres", "123456");
             c.setAutoCommit(false);
             Statement stm = c.createStatement();
-            String sql = "SELECT nombre FROM socio WHERE dpi = "+this.dpi_Txf.getText()+ " ";
+      
+             String sql = "SELECT nombre FROM socio WHERE dpi = "+this.dpi_Txf.getText()+ " ";
+         
             ResultSet rs = stm.executeQuery(sql);
             int contador=0;
             while(rs.next())
