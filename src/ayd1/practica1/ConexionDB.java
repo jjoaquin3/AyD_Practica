@@ -26,6 +26,7 @@ public class ConexionDB {
         try
         {
             Class.forName("org.postgresql.Driver");
+            //Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:8080/postgres","postgres", "123456");
             Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:8080/postgres","postgres", "123456");
             Statement s = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_READ_ONLY);
             ResultSet rs= s.executeQuery(sql);
@@ -64,8 +65,9 @@ public class ConexionDB {
     {
         try
         {
-            Class.forName("org.postgresql.Driver");
-            Connection c = DriverManager.getConnection("jdbc:postgresql://localhost:8080/Analisis","postgres", "123456");
+            Class.forName("org.postgresql.Driver");            
+            Connection c = DriverManager.getConnection("jdbc:postgresql://10.56.22.175:8080/Analisis","postgres", "123456");
+            //Connection c = DriverManager.getConnection("jdbc:postgresql://localhost:8080/Analisis","postgres", "123456");
             Statement stm = c.createStatement();
             stm.executeUpdate(sql);
             stm.close();

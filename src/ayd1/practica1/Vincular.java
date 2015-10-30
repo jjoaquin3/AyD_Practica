@@ -106,7 +106,8 @@ public class Vincular extends javax.swing.JFrame {
         {
             ArrayList socios = new ArrayList();
             Class.forName("org.postgresql.Driver");
-            Connection c = DriverManager.getConnection("jdbc:postgresql://localhost:8080/Analisis","postgres", "123456");
+            //Connection c = DriverManager.getConnection("jdbc:postgresql://localhost:8080/Analisis","postgres", "123456");
+            Connection c = DriverManager.getConnection("jdbc:postgresql://10.56.22.175:8080/Analisis","postgres", "123456");
             c.setAutoCommit(false);
             Statement stm = c.createStatement();
             ResultSet rs = stm.executeQuery("SELECT * FROM socio");
@@ -143,7 +144,8 @@ public class Vincular extends javax.swing.JFrame {
         {
             ArrayList socios = new ArrayList();
             Class.forName("org.postgresql.Driver");
-            Connection c = DriverManager.getConnection("jdbc:postgresql://localhost:8080/Analisis","postgres", "123456");
+            //Connection c = DriverManager.getConnection("jdbc:postgresql://localhost:8080/Analisis","postgres", "123456");
+            Connection c = DriverManager.getConnection("jdbc:postgresql://10.56.22.175:8080/Analisis","postgres", "123456");
             c.setAutoCommit(false);
             Statement stm = c.createStatement();
             ResultSet rs = stm.executeQuery("SELECT * FROM socio");
