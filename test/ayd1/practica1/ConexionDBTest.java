@@ -46,7 +46,7 @@ public class ConexionDBTest {
         System.out.println("Function");
         String sql = "";
         ConexionDB instance = new ConexionDB();
-       Object resultado = "prueba";
+       Object resultado = null;
         Object esperado = instance.Function(sql);
         assertEquals(resultado, esperado);
         

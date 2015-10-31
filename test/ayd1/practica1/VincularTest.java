@@ -40,49 +40,26 @@ public class VincularTest {
     /**
      * Test of cargarSociosPrincipales method, of class Vincular.
      */
-    @Test
+  
+    
     public void testCargarSociosPrincipales() {
         System.out.println("cargarSociosPrincipales");
         Vincular instance = new Vincular();
         instance.cargarSociosPrincipales();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
-    /**
-     * Test of cargarSociosSecundarios method, of class Vincular.
-     */
+   
     @Test
     public void testCargarSociosSecundarios() {
         System.out.println("cargarSociosSecundarios");
         Vincular instance = new Vincular();
-        instance.cargarSociosSecundarios();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       instance.cargarSociosSecundarios();
+        
     }
 
-    /**
-     * Test of vincular method, of class Vincular.
-     */
-    @Test
-    public void testVincular() {
-        System.out.println("vincular");
-        Vincular instance = new Vincular();
-        instance.vincular();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of main method, of class Vincular.
-     */
-    @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        Vincular.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+   
+  
+  
     
 }
